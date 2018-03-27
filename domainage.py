@@ -34,7 +34,7 @@ url = enterurl.split("//")[-1].split("/")[0].split('?')[0]
 show = "https://input.payapi.io/v1/api/fraud/domain/age/" + url
 r = requests.get(show)
 
-#os.system('clear')  # on linux / os x
+os.system('clear')  # on linux / os x
 
 if r.status_code == 200:
 	print 
